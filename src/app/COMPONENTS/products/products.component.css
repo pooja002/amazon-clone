@@ -1,3 +1,9 @@
+.pro
+{
+    margin-left: 150px;
+    align-items: center;
+}
+
 .products{
     justify-content: center; 
     display: inline-flex;

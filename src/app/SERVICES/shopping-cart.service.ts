@@ -32,4 +32,11 @@ export class ShoppingCartService {
    return JSON.parse(items);
   }
 
+
+  getCartSize=()=>
+  {
+   let items = this.getShoppingCartItems();
+   return items?this.getShoppingCartItems().length:0;
+  }
+
 }
