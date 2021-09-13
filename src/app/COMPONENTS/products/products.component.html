@@ -4,7 +4,7 @@
             <p>{{item.title}}</p>
             <p>&#8377;<strong>{{item.price}}</strong></p>
             <img src={{item.image}} alt="">
-            <button (click)="addToCart()"> Add to cart</button>
+            <button (click)="addToCart(item)"> Add to cart</button>
         </mat-card>
     </div>
 </div>
