@@ -13,6 +13,8 @@ import { BannerComponent } from './COMPONENTS/banner/banner.component';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './COMPONENTS/products/products.component';
+import { CheckoutProductsComponent } from './COMPONENTS/checkout-products/checkout-products.component';
+import { CheckoutSubTotalComponent } from './COMPONENTS/checkout-sub-total/checkout-sub-total.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,9 @@ import { ProductsComponent } from './COMPONENTS/products/products.component';
     CheckoutComponent,
     LoginComponent,
     BannerComponent,
-    ProductsComponent
+    ProductsComponent,
+    CheckoutProductsComponent,
+    CheckoutSubTotalComponent
   ],
   imports: [
     BrowserModule,
