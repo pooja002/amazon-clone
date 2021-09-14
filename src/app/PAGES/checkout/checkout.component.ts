@@ -10,9 +10,10 @@ export class CheckoutComponent implements OnInit {
   
   items:any[]=[];
 
-  constructor(private shoppingCartService:ShoppingCartService) { }
+  constructor(public shoppingCartService:ShoppingCartService) { }
 
   ngOnInit(): void {
+    this.getShoppingCart();
   }
 
   getShoppingCart()

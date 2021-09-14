@@ -1,5 +1,15 @@
 <div class="checkout">
     <div class="checkout_left">
+        <div class="checkout_empty" *ngIf="shoppingCartService.getCartSize()==0">
+            <h2>Your cart is empty</h2>
+            <p>Head over to homepage to shop with exclusive discounts!</p>
+        </div>
+
+        <div class="checkout_notEmpty" *ngIf="shoppingCartService.getCartSize()!=0">
+            <p><strong>Shopping Cart</strong></p>      
+            <app-checkout-products [checkout_products]="items"></app-checkout-products>
+        </div>
+
 
     </div>
     
