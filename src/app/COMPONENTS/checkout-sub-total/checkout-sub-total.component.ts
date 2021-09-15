@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ShoppingCartService } from 'src/app/SERVICES/shopping-cart.service';
 
 @Component({
   selector: 'app-checkout-sub-total',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckoutSubTotalComponent implements OnInit {
 
-  constructor() { }
+  constructor(public shoppingCart:ShoppingCartService) { }
 
   ngOnInit(): void {
   }

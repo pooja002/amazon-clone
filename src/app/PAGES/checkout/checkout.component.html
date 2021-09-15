@@ -7,13 +7,13 @@
 
         <div class="checkout_notEmpty" *ngIf="shoppingCartService.getCartSize()!=0">
             <p><strong>Shopping Cart</strong></p>      
-            <app-checkout-products [checkout_products]="items"></app-checkout-products>
+            <app-checkout-products [checkout_products]="items" (deleteEvent)="deleteEventHandler()"></app-checkout-products>
         </div>
 
 
     </div>
     
     <div class="checkout_right">
-
+        <app-checkout-sub-total></app-checkout-sub-total>
     </div>
 </div>

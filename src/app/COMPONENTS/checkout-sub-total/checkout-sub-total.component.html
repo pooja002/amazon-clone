@@ -1,1 +1,9 @@
-<p>checkout-sub-total works!</p>
+<div class="subtotal" *ngIf="shoppingCart.getCartSize()>0">
+  <p>Subtotal: ({{shoppingCart.getCartSize()}} items) <strong>&#8377;{{shoppingCart.getTotal()}}</strong></p>
+
+  <div class="subtotal_gift">
+      <input type="checkbox"/>
+      <p>This order contains a gift</p>
+  </div>
+    <button>Proceed to checkout</button>
+</div>
