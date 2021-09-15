@@ -15,6 +15,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './COMPONENTS/products/products.component';
 import { CheckoutProductsComponent } from './COMPONENTS/checkout-products/checkout-products.component';
 import { CheckoutSubTotalComponent } from './COMPONENTS/checkout-sub-total/checkout-sub-total.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire/compat';
+import { firebaseConfig } from 'src/environments/environment.prod';
+// import { firebaseConfig } from 'src/app/CONFIG/firebase.config';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,8 +38,11 @@ import { CheckoutSubTotalComponent } from './COMPONENTS/checkout-sub-total/check
     MatIconModule,
     BrowserAnimationsModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

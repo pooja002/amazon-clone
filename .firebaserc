@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "myclone-ba90e": {
+      "hosting": {
+        "my-amazon-clone": [
+          "myclone-ba90e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "myclone-ba90e"
+  }
+}
